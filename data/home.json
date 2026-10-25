@@ -1,0 +1,489 @@
+{
+  "ui": {
+    "tooMany": "Too many attempts. Please wait a little before trying again.",
+    "conflict": "An earlier request may already be saved. Close this form and reopen it if you need to change or resend your details.",
+    "saveFailed": "We could not save your enquiry. Please retry or use the main contact page.",
+    "unconfirmed": "Your enquiry was not confirmed as saved. Please retry.",
+    "measurementOn": "Optional usage measurement is on for this website.",
+    "measurementOff": "Optional usage measurement is off for this website.",
+    "saveWhatsApp": "Save and open WhatsApp",
+    "saveChat": "Save and open live chat",
+    "consentWhatsApp": "I agree that Opplex IPTV may store these details and contact me on WhatsApp about this enquiry, not for marketing.",
+    "consentChat": "I agree that Opplex IPTV may store these details and handle my live-chat enquiry. This does not give permission for WhatsApp contact.",
+    "phoneInvalid": "Enter a phone number with 8–15 digits (0–9), including your country code.",
+    "required": "Please complete this field.",
+    "emailInvalid": "Enter a valid email address.",
+    "consentRequired": "Please confirm contact permission to continue.",
+    "fieldInvalid": "Please check this field.",
+    "saving": "Saving your enquiry…",
+    "saved": "Your enquiry is saved.",
+    "invalidField": "Please check the {field} field and try again.",
+    "field_name": "name",
+    "field_email": "email",
+    "field_phone": "phone",
+    "field_message": "message",
+    "field_contact_consent": "contact permission",
+    "saveTimeout": "Saving took too long. Please retry; the same request will not create a duplicate.",
+    "chatFailed": "Chat could not load. Tap the chat icon to retry, or use WhatsApp.",
+    "chatSlow": "Chat is taking longer to load. You can use WhatsApp for support.",
+    "chatLoading": "Chat is still loading. You can use WhatsApp for support.",
+    "chatOpening": "Opening live chat…",
+    "terms": "Terms of service",
+    "privacy": "Privacy policy",
+    "refund": "Refund policy",
+    "compare": "Compare the full term",
+    "equivalentNote": "Monthly equivalent = plan total ÷ months. This is a comparison only, not monthly billing. Check the final amount and any fees at checkout.",
+    "comparisonRegion": "Plan comparison; scroll horizontally if needed",
+    "comparisonCaption": "{provider} · current available plans",
+    "term": "Term",
+    "total": "Plan total",
+    "equivalent": "Monthly equivalent",
+    "connections": "Connections",
+    "confirmSupport": "Confirm with support",
+    "fullPlan": "For the full {duration} plan",
+    "finalFees": "Review the final amount and any fees at checkout",
+    "connectionCount": "Simultaneous connections: {count}",
+    "confirmConnections": "Confirm the connection allowance with support",
+    "checkout": "Continue to checkout",
+    "checkoutLabel": "Continue to checkout: {provider}, {duration}, {price}",
+    "catalogUnavailable": "Catalog unavailable",
+    "availability": "Check availability with support",
+    "deviceCheck": "Check your exact device and player with support before purchasing. A listed device is not a compatibility guarantee.",
+    "deviceContact": "Contact support to check your device.",
+    "deviceError": "Device information is temporarily unavailable. Contact support for help.",
+    "loadingPlans": "Loading current plans",
+    "loadingBrand": "Loading current brand plans from Opplex IPTV…",
+    "connecting": "Connecting to catalog",
+    "loadingDevices": "Loading device information…",
+    "missingBrand": "This page has no configured brand. Please contact support.",
+    "noPlans": "No available plans for this brand right now. Please retry or contact support.",
+    "currentBrand": "Current brand",
+    "plansAvailable": "{provider} · available plans: {count}",
+    "connected": "Catalog connected",
+    "priceNote": "Current catalog prices. Review the final total and any fees at checkout.",
+    "currentPlan": "{duration} · current plan",
+    "pricesError": "We could not load current prices. Please retry or contact support."
+  },
+  "metadata": {
+    "en": {
+      "title": "Get IPTV | Opplex & Filex Plans and Device Setup",
+      "description": "Get IPTV with a clearer plan: compare Opplex and Filex subscriptions, check your device and player, and review the full amount before Opplexify checkout.",
+      "ogTitle": "Get IPTV | Opplex & Filex Plans and Device Setup",
+      "ogDescription": "Get IPTV with a clearer plan: compare Opplex and Filex subscriptions, check your device and player, and review the full amount before Opplexify checkout.",
+      "twitterTitle": "Get IPTV | Opplex & Filex Plans and Device Setup",
+      "twitterDescription": "Get IPTV with a clearer plan: compare Opplex and Filex subscriptions, check your device and player, and review the full amount before Opplexify checkout.",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://getiptv.store/#website",
+            "url": "https://getiptv.store/",
+            "name": "Get IPTV",
+            "inLanguage": [
+              "en",
+              "es",
+              "fr",
+              "it",
+              "nl",
+              "pt",
+              "ru",
+              "ur",
+              "ar",
+              "hi"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://getiptv.store/#webpage",
+            "url": "https://getiptv.store/",
+            "name": "Get IPTV | Opplex & Filex Plans and Device Setup",
+            "description": "Get IPTV with a clearer plan: compare Opplex and Filex subscriptions, check your device and player, and review the full amount before Opplexify checkout.",
+            "isPartOf": {
+              "@id": "https://getiptv.store/#website"
+            },
+            "inLanguage": "en"
+          }
+        ]
+      }
+    },
+    "es": {
+      "title": "Get IPTV | Planes Opplex y Filex y configuración",
+      "description": "Compara suscripciones Opplex y Filex con Get IPTV. Revisa tu dispositivo, la aplicación y el precio total antes de continuar al pago en Opplexify.",
+      "ogTitle": "Get IPTV | Planes Opplex y Filex y configuración",
+      "ogDescription": "Compara suscripciones Opplex y Filex con Get IPTV. Revisa tu dispositivo, la aplicación y el precio total antes de continuar al pago en Opplexify.",
+      "twitterTitle": "Get IPTV | Planes Opplex y Filex y configuración",
+      "twitterDescription": "Compara suscripciones Opplex y Filex con Get IPTV. Revisa tu dispositivo, la aplicación y el precio total antes de continuar al pago en Opplexify.",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://getiptv.store/#website",
+            "url": "https://getiptv.store/",
+            "name": "Get IPTV",
+            "inLanguage": [
+              "en",
+              "es",
+              "fr",
+              "it",
+              "nl",
+              "pt",
+              "ru",
+              "ur",
+              "ar",
+              "hi"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://getiptv.store/es/#webpage",
+            "url": "https://getiptv.store/es/",
+            "name": "Get IPTV | Planes Opplex y Filex y configuración",
+            "description": "Compara suscripciones Opplex y Filex con Get IPTV. Revisa tu dispositivo, la aplicación y el precio total antes de continuar al pago en Opplexify.",
+            "isPartOf": {
+              "@id": "https://getiptv.store/#website"
+            },
+            "inLanguage": "es"
+          }
+        ]
+      }
+    },
+    "fr": {
+      "title": "Get IPTV | Offres Opplex, Filex et configuration",
+      "description": "Choisissez avec Get IPTV : comparez les abonnements Opplex et Filex, vérifiez votre appareil et votre lecteur, puis le total avant le paiement Opplexify.",
+      "ogTitle": "Get IPTV | Offres Opplex, Filex et configuration",
+      "ogDescription": "Choisissez avec Get IPTV : comparez les abonnements Opplex et Filex, vérifiez votre appareil et votre lecteur, puis le total avant le paiement Opplexify.",
+      "twitterTitle": "Get IPTV | Offres Opplex, Filex et configuration",
+      "twitterDescription": "Choisissez avec Get IPTV : comparez les abonnements Opplex et Filex, vérifiez votre appareil et votre lecteur, puis le total avant le paiement Opplexify.",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://getiptv.store/#website",
+            "url": "https://getiptv.store/",
+            "name": "Get IPTV",
+            "inLanguage": [
+              "en",
+              "es",
+              "fr",
+              "it",
+              "nl",
+              "pt",
+              "ru",
+              "ur",
+              "ar",
+              "hi"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://getiptv.store/fr/#webpage",
+            "url": "https://getiptv.store/fr/",
+            "name": "Get IPTV | Offres Opplex, Filex et configuration",
+            "description": "Choisissez avec Get IPTV : comparez les abonnements Opplex et Filex, vérifiez votre appareil et votre lecteur, puis le total avant le paiement Opplexify.",
+            "isPartOf": {
+              "@id": "https://getiptv.store/#website"
+            },
+            "inLanguage": "fr"
+          }
+        ]
+      }
+    },
+    "it": {
+      "title": "Get IPTV | Abbonamento IPTV Opplex e Filex",
+      "description": "Cerchi un abbonamento IPTV? Su Get IPTV confronta Opplex e Filex, verifica dispositivo e lettore e controlla il totale prima del checkout Opplexify.",
+      "ogTitle": "Get IPTV | Abbonamento IPTV Opplex e Filex",
+      "ogDescription": "Cerchi un abbonamento IPTV? Su Get IPTV confronta Opplex e Filex, verifica dispositivo e lettore e controlla il totale prima del checkout Opplexify.",
+      "twitterTitle": "Get IPTV | Abbonamento IPTV Opplex e Filex",
+      "twitterDescription": "Cerchi un abbonamento IPTV? Su Get IPTV confronta Opplex e Filex, verifica dispositivo e lettore e controlla il totale prima del checkout Opplexify.",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://getiptv.store/#website",
+            "url": "https://getiptv.store/",
+            "name": "Get IPTV",
+            "inLanguage": [
+              "en",
+              "es",
+              "fr",
+              "it",
+              "nl",
+              "pt",
+              "ru",
+              "ur",
+              "ar",
+              "hi"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://getiptv.store/it/#webpage",
+            "url": "https://getiptv.store/it/",
+            "name": "Get IPTV | Abbonamento IPTV Opplex e Filex",
+            "description": "Cerchi un abbonamento IPTV? Su Get IPTV confronta Opplex e Filex, verifica dispositivo e lettore e controlla il totale prima del checkout Opplexify.",
+            "isPartOf": {
+              "@id": "https://getiptv.store/#website"
+            },
+            "inLanguage": "it"
+          }
+        ]
+      }
+    },
+    "nl": {
+      "title": "Get IPTV | Opplex- en Filex-abonnementen en installatie",
+      "description": "Vergelijk met Get IPTV de abonnementen van Opplex en Filex. Controleer je apparaat, speler en het totaalbedrag voordat je doorgaat naar Opplexify.",
+      "ogTitle": "Get IPTV | Opplex- en Filex-abonnementen en installatie",
+      "ogDescription": "Vergelijk met Get IPTV de abonnementen van Opplex en Filex. Controleer je apparaat, speler en het totaalbedrag voordat je doorgaat naar Opplexify.",
+      "twitterTitle": "Get IPTV | Opplex- en Filex-abonnementen en installatie",
+      "twitterDescription": "Vergelijk met Get IPTV de abonnementen van Opplex en Filex. Controleer je apparaat, speler en het totaalbedrag voordat je doorgaat naar Opplexify.",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://getiptv.store/#website",
+            "url": "https://getiptv.store/",
+            "name": "Get IPTV",
+            "inLanguage": [
+              "en",
+              "es",
+              "fr",
+              "it",
+              "nl",
+              "pt",
+              "ru",
+              "ur",
+              "ar",
+              "hi"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://getiptv.store/nl/#webpage",
+            "url": "https://getiptv.store/nl/",
+            "name": "Get IPTV | Opplex- en Filex-abonnementen en installatie",
+            "description": "Vergelijk met Get IPTV de abonnementen van Opplex en Filex. Controleer je apparaat, speler en het totaalbedrag voordat je doorgaat naar Opplexify.",
+            "isPartOf": {
+              "@id": "https://getiptv.store/#website"
+            },
+            "inLanguage": "nl"
+          }
+        ]
+      }
+    },
+    "pt": {
+      "title": "Get IPTV | Planos Opplex e Filex e configuração",
+      "description": "Compare assinaturas Opplex e Filex no Get IPTV. Confira seu dispositivo, o aplicativo e o valor total antes de seguir para o pagamento no Opplexify.",
+      "ogTitle": "Get IPTV | Planos Opplex e Filex e configuração",
+      "ogDescription": "Compare assinaturas Opplex e Filex no Get IPTV. Confira seu dispositivo, o aplicativo e o valor total antes de seguir para o pagamento no Opplexify.",
+      "twitterTitle": "Get IPTV | Planos Opplex e Filex e configuração",
+      "twitterDescription": "Compare assinaturas Opplex e Filex no Get IPTV. Confira seu dispositivo, o aplicativo e o valor total antes de seguir para o pagamento no Opplexify.",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://getiptv.store/#website",
+            "url": "https://getiptv.store/",
+            "name": "Get IPTV",
+            "inLanguage": [
+              "en",
+              "es",
+              "fr",
+              "it",
+              "nl",
+              "pt",
+              "ru",
+              "ur",
+              "ar",
+              "hi"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://getiptv.store/pt/#webpage",
+            "url": "https://getiptv.store/pt/",
+            "name": "Get IPTV | Planos Opplex e Filex e configuração",
+            "description": "Compare assinaturas Opplex e Filex no Get IPTV. Confira seu dispositivo, o aplicativo e o valor total antes de seguir para o pagamento no Opplexify.",
+            "isPartOf": {
+              "@id": "https://getiptv.store/#website"
+            },
+            "inLanguage": "pt"
+          }
+        ]
+      }
+    },
+    "ru": {
+      "title": "Get IPTV | Подписки Opplex и Filex и настройка",
+      "description": "Сравните подписки Opplex и Filex на Get IPTV. Проверьте устройство, приложение и полную стоимость перед переходом к оплате через Opplexify.",
+      "ogTitle": "Get IPTV | Подписки Opplex и Filex и настройка",
+      "ogDescription": "Сравните подписки Opplex и Filex на Get IPTV. Проверьте устройство, приложение и полную стоимость перед переходом к оплате через Opplexify.",
+      "twitterTitle": "Get IPTV | Подписки Opplex и Filex и настройка",
+      "twitterDescription": "Сравните подписки Opplex и Filex на Get IPTV. Проверьте устройство, приложение и полную стоимость перед переходом к оплате через Opplexify.",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://getiptv.store/#website",
+            "url": "https://getiptv.store/",
+            "name": "Get IPTV",
+            "inLanguage": [
+              "en",
+              "es",
+              "fr",
+              "it",
+              "nl",
+              "pt",
+              "ru",
+              "ur",
+              "ar",
+              "hi"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://getiptv.store/ru/#webpage",
+            "url": "https://getiptv.store/ru/",
+            "name": "Get IPTV | Подписки Opplex и Filex и настройка",
+            "description": "Сравните подписки Opplex и Filex на Get IPTV. Проверьте устройство, приложение и полную стоимость перед переходом к оплате через Opplexify.",
+            "isPartOf": {
+              "@id": "https://getiptv.store/#website"
+            },
+            "inLanguage": "ru"
+          }
+        ]
+      }
+    },
+    "ur": {
+      "title": "Get IPTV | Opplex اور Filex پلان اور سیٹ اپ",
+      "description": "Get IPTV پر Opplex اور Filex کی سبسکرپشنز کا موازنہ کریں۔ Opplexify پر ادائیگی سے پہلے اپنا آلہ، پلیئر اور مکمل قیمت دیکھ لیں۔",
+      "ogTitle": "Get IPTV | Opplex اور Filex پلان اور سیٹ اپ",
+      "ogDescription": "Get IPTV پر Opplex اور Filex کی سبسکرپشنز کا موازنہ کریں۔ Opplexify پر ادائیگی سے پہلے اپنا آلہ، پلیئر اور مکمل قیمت دیکھ لیں۔",
+      "twitterTitle": "Get IPTV | Opplex اور Filex پلان اور سیٹ اپ",
+      "twitterDescription": "Get IPTV پر Opplex اور Filex کی سبسکرپشنز کا موازنہ کریں۔ Opplexify پر ادائیگی سے پہلے اپنا آلہ، پلیئر اور مکمل قیمت دیکھ لیں۔",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://getiptv.store/#website",
+            "url": "https://getiptv.store/",
+            "name": "Get IPTV",
+            "inLanguage": [
+              "en",
+              "es",
+              "fr",
+              "it",
+              "nl",
+              "pt",
+              "ru",
+              "ur",
+              "ar",
+              "hi"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://getiptv.store/ur/#webpage",
+            "url": "https://getiptv.store/ur/",
+            "name": "Get IPTV | Opplex اور Filex پلان اور سیٹ اپ",
+            "description": "Get IPTV پر Opplex اور Filex کی سبسکرپشنز کا موازنہ کریں۔ Opplexify پر ادائیگی سے پہلے اپنا آلہ، پلیئر اور مکمل قیمت دیکھ لیں۔",
+            "isPartOf": {
+              "@id": "https://getiptv.store/#website"
+            },
+            "inLanguage": "ur"
+          }
+        ]
+      }
+    },
+    "ar": {
+      "title": "Get IPTV | خطط Opplex وFilex وإعداد الأجهزة",
+      "description": "قارن اشتراكات Opplex وFilex عبر Get IPTV. تحقق من جهازك وتطبيق التشغيل والمبلغ الإجمالي قبل الانتقال إلى الدفع عبر Opplexify.",
+      "ogTitle": "Get IPTV | خطط Opplex وFilex وإعداد الأجهزة",
+      "ogDescription": "قارن اشتراكات Opplex وFilex عبر Get IPTV. تحقق من جهازك وتطبيق التشغيل والمبلغ الإجمالي قبل الانتقال إلى الدفع عبر Opplexify.",
+      "twitterTitle": "Get IPTV | خطط Opplex وFilex وإعداد الأجهزة",
+      "twitterDescription": "قارن اشتراكات Opplex وFilex عبر Get IPTV. تحقق من جهازك وتطبيق التشغيل والمبلغ الإجمالي قبل الانتقال إلى الدفع عبر Opplexify.",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://getiptv.store/#website",
+            "url": "https://getiptv.store/",
+            "name": "Get IPTV",
+            "inLanguage": [
+              "en",
+              "es",
+              "fr",
+              "it",
+              "nl",
+              "pt",
+              "ru",
+              "ur",
+              "ar",
+              "hi"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://getiptv.store/ar/#webpage",
+            "url": "https://getiptv.store/ar/",
+            "name": "Get IPTV | خطط Opplex وFilex وإعداد الأجهزة",
+            "description": "قارن اشتراكات Opplex وFilex عبر Get IPTV. تحقق من جهازك وتطبيق التشغيل والمبلغ الإجمالي قبل الانتقال إلى الدفع عبر Opplexify.",
+            "isPartOf": {
+              "@id": "https://getiptv.store/#website"
+            },
+            "inLanguage": "ar"
+          }
+        ]
+      }
+    },
+    "hi": {
+      "title": "Get IPTV | Opplex और Filex प्लान और डिवाइस सेटअप",
+      "description": "Get IPTV पर Opplex और Filex सब्सक्रिप्शन की तुलना करें। Opplexify पर भुगतान करने से पहले अपना डिवाइस, प्लेयर और कुल रकम जाँच लें।",
+      "ogTitle": "Get IPTV | Opplex और Filex प्लान और डिवाइस सेटअप",
+      "ogDescription": "Get IPTV पर Opplex और Filex सब्सक्रिप्शन की तुलना करें। Opplexify पर भुगतान करने से पहले अपना डिवाइस, प्लेयर और कुल रकम जाँच लें।",
+      "twitterTitle": "Get IPTV | Opplex और Filex प्लान और डिवाइस सेटअप",
+      "twitterDescription": "Get IPTV पर Opplex और Filex सब्सक्रिप्शन की तुलना करें। Opplexify पर भुगतान करने से पहले अपना डिवाइस, प्लेयर और कुल रकम जाँच लें।",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://getiptv.store/#website",
+            "url": "https://getiptv.store/",
+            "name": "Get IPTV",
+            "inLanguage": [
+              "en",
+              "es",
+              "fr",
+              "it",
+              "nl",
+              "pt",
+              "ru",
+              "ur",
+              "ar",
+              "hi"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://getiptv.store/hi/#webpage",
+            "url": "https://getiptv.store/hi/",
+            "name": "Get IPTV | Opplex और Filex प्लान और डिवाइस सेटअप",
+            "description": "Get IPTV पर Opplex और Filex सब्सक्रिप्शन की तुलना करें। Opplexify पर भुगतान करने से पहले अपना डिवाइस, प्लेयर और कुल रकम जाँच लें।",
+            "isPartOf": {
+              "@id": "https://getiptv.store/#website"
+            },
+            "inLanguage": "hi"
+          }
+        ]
+      }
+    }
+  }
+}
