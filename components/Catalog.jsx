@@ -2,9 +2,11 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import dynamic from 'next/dynamic';
 import { availablePlans, durationText, getApiData, message, money } from '../lib/api';
 import { useConsent } from './ConsentProvider';
-import CheckoutResume from './CheckoutResume';
+
+const CheckoutResume = dynamic(() => import('./CheckoutResume'));
 
 const CatalogContext = createContext(null);
 const PROVIDERS = {
@@ -109,6 +111,38 @@ export function useCatalog() {
   return context;
 }
 
+export function PlanComparison({ locale, ui, headingLevel = 3, id = 'plan-comparison' }) {
+  const { data, error } = useCatalog();
+  const plans = data?.packages || [];
+  const provider = data?.provider_name || '';
+  const t = (key, values) => message(ui, key, values);
+  const count = value => new Intl.NumberFormat(locale).format(value);
+  const Heading = headingLevel === 2 ? 'h2' : 'h3';
+  if (!plans.length) return null;
+
+  return <section className="plan-comparison" id={id} aria-labelledby={id + '-heading'}>
+    <Heading id={id + '-heading'}>{t('compare')}</Heading>
+    <p>{t('equivalentNote')}</p>
+    <div className="comparison-scroll" tabIndex={0} role="region" aria-label={t('comparisonRegion')}>
+      <table>
+        <caption>{t('comparisonCaption', { provider })}</caption>
+        <thead><tr>{['term', 'total', 'equivalent', 'connections'].map(key => <th scope="col" key={key}>{t(key)}</th>)}</tr></thead>
+        <tbody>
+          {plans.map(plan => (
+            <tr key={plan.id}>
+              <th scope="row"><span className="comparison-provider">{plan.service}</span>{durationText(plan.duration_months, locale)}</th>
+              <td>{plan.price}</td>
+              <td>{money(Number(plan.price_amount) / plan.duration_months, plan.currency, locale)}</td>
+              <td>{Number.isSafeInteger(plan.max_devices) && plan.max_devices > 0 ? count(plan.max_devices) : t('confirmSupport')}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p className="catalog-note">{t(error === 'pricesError' ? 'pricesError' : 'priceNote')}</p>
+  </section>;
+}
+
 export default function Catalog({ site, locale, ui, labels = {} }) {
   const { data, loading, error, reload, checkoutReady } = useCatalog();
   const { checkoutLink, track } = useConsent();
@@ -169,29 +203,7 @@ export default function Catalog({ site, locale, ui, labels = {} }) {
           );
         })}
       </div>
-      {plans.length > 0 && (
-        <section className="plan-comparison" id="plan-comparison" aria-labelledby="plan-comparison-heading">
-          <h3 id="plan-comparison-heading">{t('compare')}</h3>
-          <p>{t('equivalentNote')}</p>
-          <div className="comparison-scroll" tabIndex={0} role="region" aria-label={t('comparisonRegion')}>
-            <table>
-              <caption>{t('comparisonCaption', { provider })}</caption>
-              <thead><tr>{['term', 'total', 'equivalent', 'connections'].map(key => <th scope="col" key={key}>{t(key)}</th>)}</tr></thead>
-              <tbody>
-                {plans.map(plan => (
-                  <tr key={plan.id}>
-                    <th scope="row"><span className="comparison-provider">{plan.service}</span>{durationText(plan.duration_months, locale)}</th>
-                    <td>{plan.price}</td>
-                    <td>{money(Number(plan.price_amount) / plan.duration_months, plan.currency, locale)}</td>
-                    <td>{Number.isSafeInteger(plan.max_devices) && plan.max_devices > 0 ? count(plan.max_devices) : t('confirmSupport')}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="catalog-note">{t(error === 'pricesError' ? 'pricesError' : 'priceNote')}</p>
-        </section>
-      )}
+      <PlanComparison locale={locale} ui={ui} />
     </section>
   );
 }

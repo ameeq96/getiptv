@@ -2,15 +2,17 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Catalog from './Catalog';
+import dynamic from 'next/dynamic';
+import Catalog, { PlanComparison } from './Catalog';
 import { SupportSection } from './HomePage';
 import { useSupport } from './SupportWidget';
 import { pathFor } from '../lib/site';
 import { centralUrl } from '../lib/api';
-import HelpAssistant from './HelpAssistant';
 import GuideMedia from './GuideMedia';
-import ServiceUpdates from './ServiceUpdates';
-import VerifiedReviews from './VerifiedReviews';
+
+const HelpAssistant = dynamic(() => import('./HelpAssistant'));
+const ServiceUpdates = dynamic(() => import('./ServiceUpdates'));
+const VerifiedReviews = dynamic(() => import('./VerifiedReviews'));
 
 export default function ContentPage({ site, locale, page, pages = [], labels = {}, ui = {}, text = {}, nav = {} }) {
   const { openContact } = useSupport();
@@ -19,6 +21,7 @@ export default function ContentPage({ site, locale, page, pages = [], labels = {
   const policy = ['terms-of-service', 'privacy-policy', 'refund-policy'].includes(page.slug);
   const articles = pages.filter(item => item.kind === 'article');
   const isPackages = page.kind === 'packages';
+  const comparisonGuide = page.slug === 'blogs/iptv-setup-before-checkout';
   const [playlistGuide, playbackGuide, supportGuide] = articles;
   const relatedSlugs = page.kind === 'article' ? ['iptv-applications', ...articles.map(item => item.slug)] : {
     setup: ['iptv-applications', playbackGuide?.slug, supportGuide?.slug],
@@ -37,6 +40,7 @@ export default function ContentPage({ site, locale, page, pages = [], labels = {
         <article className="page-copy">
           {policy && <aside className="policy-notice"><p>{labels.disclaimer}</p><a href={centralUrl('/' + page.slug, site.source, origin)}>{labels.governingPolicy} — opplexiptv.com <span aria-hidden="true">↗</span></a></aside>}
           {page.sections.map((section, index) => <section className="copy-section" key={section.heading + index} aria-labelledby={'copy-heading-' + index}><span className="section-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><div><h2 id={'copy-heading-' + index}>{section.heading}</h2><p>{section.body}</p>{section.links?.length > 0 && <ul>{section.links.map(link => <li key={link.url}><a className="text-link" href={link.url} rel="noopener noreferrer">{link.label}<span aria-hidden="true">↗</span></a></li>)}</ul>}</div></section>)}
+          {comparisonGuide && <PlanComparison locale={locale} ui={ui} headingLevel={2} id="guide-plan-comparison" />}
           {relatedPages.length > 0 && <nav className="copy-section" aria-labelledby="related-guides-heading"><span className="section-index" aria-hidden="true">↗</span><div><h2 id="related-guides-heading">{nav.blogs || labels.guide}</h2><ul>{relatedPages.map(related => <li key={related.slug}><Link className="text-link" href={pathFor(locale, related.slug)}>{related.title}<span aria-hidden="true">→</span></Link></li>)}</ul></div></nav>}
           {page.kind === 'contact' && <button type="button" className="button button-primary" onClick={event => openContact('whatsapp', event.currentTarget)}>{labels.contact}<span aria-hidden="true">↗</span></button>}
           {page.kind === 'activation' && <a className="button button-primary" href={centralUrl('/' + (page.slug === 'activate-info' ? 'activate-info' : 'activate'), site.source, origin)}>{nav[page.slug] || page.title}<span aria-hidden="true">↗</span></a>}
