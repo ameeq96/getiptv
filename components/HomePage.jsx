@@ -53,7 +53,7 @@ export default function HomePage({ site, locale, ui = {}, text = {}, labels = {}
       <div className="hero-copy"><p className="eyebrow"><span aria-hidden="true" />{t('Your next screen starts here')}</p>
         <h1 id="hero-heading">{content.hero_heading || site.name}</h1><p className="hero-description">{content.hero_description}</p>
         <div className="hero-actions"><a href="#plans" className="button button-primary">{nav.packages || labels.packages}<span aria-hidden="true">↗</span></a><Link href={pathFor(locale, 'setup')} className="button button-outline">{nav.setup || labels.setup}<span aria-hidden="true">→</span></Link></div>
-        <p className="hero-note">{t('Opplex and Filex plans. One clear starting point. Checkout through Opplexify via Opplex IPTV.')}</p>
+        <p className="hero-note">{t('Opplex and Filex plans. One clear starting point. Checkout through Opplexify via Opplex IPTV.').split(/(Opplex IPTV)/).map((part, index) => part === 'Opplex IPTV' ? <a key={index} href="https://opplexiptv.com/iptv-home">{part}</a> : part)}</p>
       </div>
       <div className="hero-visual"><ScreenArtwork /><a className="hero-plan-preview" href="#plans"><span className="hero-preview-copy"><small>{t('From the current catalogue')}</small><strong>{firstPlan?.service || site.name}</strong></span><span className="hero-preview-price">{firstPlan?.price || (loading ? '…' : '—')}{firstPlan && <small>{durationText(firstPlan.duration_months, locale)}</small>}</span><span className="preview-arrow" aria-hidden="true">↗</span></a></div>
     </div></section>
